@@ -1,0 +1,22 @@
+{
+  "name": "drved-backend",
+  "version": "0.2.0",
+  "description": "DrVed backend (Express) with Razorpay integration and product endpoints",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "razorpay": "^2.8.5",
+    "crypto": "^1.0.1",
+    "lowdb": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
