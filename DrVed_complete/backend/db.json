@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Bamboo Toothbrush - Classic",
+      "price": 199,
+      "currency": "INR",
+      "description": "Moso bamboo handle, charcoal bristles.",
+      "image": "/images/toothbrush.png"
+    },
+    {
+      "id": 2,
+      "name": "Paper Pen - Eco",
+      "price": 49,
+      "currency": "INR",
+      "description": "Reusable paper pen made from recycled paper.",
+      "image": "/images/paperpen.png"
+    },
+    {
+      "id": 3,
+      "name": "Bamboo Water Bottle",
+      "price": 799,
+      "currency": "INR",
+      "description": "Stainless inner with bamboo sleeve.",
+      "image": "/images/bottle.png"
+    }
+  ]
+}
