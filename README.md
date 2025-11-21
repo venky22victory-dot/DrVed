@@ -1,28 +1,30 @@
-# DrVed - Starter Repo
+# DrVed - Complete Starter (Frontend + Backend)
 
-This repository is a starter template for the Dr. Ved Sciences project.
+This repository contains a deployable frontend (React) and backend (Node/Express) scaffold suitable for Netlify (frontend) + Render/Railway/VPS (backend).
 
-## Contents
-- `backend/` - Node.js + Express skeleton (Razorpay placeholders)
-- `frontend/` - Minimal React skeleton (placeholder images, slots)
-- `.github/workflows/node-ci.yml` - CI workflow for Node.js build/test
-- `.gitignore` - recommended ignores
+## Quick start (local)
 
-## How to use
-1. Extract or clone into your workspace.
-2. Backend:
-   - `cd backend`
-   - Copy `.env.example` -> `.env` and fill in values (RAZORPAY_KEY_ID, RAZORPAY_KEY_SECRET, PORT, DATABASE_URL)
-   - `npm install`
-   - `npm run dev` (uses nodemon)
-3. Frontend:
-   - `cd frontend`
-   - `npm install`
-   - `npm start`
-4. Push to your GitHub repository:
-   - `git remote add origin https://github.com/venky22victory-dot/DrVed.git`
-   - `git push -u origin main`
+### Backend
+```bash
+cd backend
+cp .env.example .env
+# edit .env with real values
+npm install
+npm run dev
+```
+
+### Frontend
+```bash
+cd frontend
+cp .env.example .env
+npm install
+npm start
+```
+
+### Build & Deploy
+- Frontend: build with `npm run build` and deploy to Netlify (set base dir to `frontend`, publish `frontend/build`).
+- Backend: host on Render/Railway/Heroku. Provide the backend URL to frontend env var `REACT_APP_API_BASE_URL`.
 
 ## Notes
-- Do NOT commit secrets. Use GitHub Secrets for CI / deployment.
-- This is a starter scaffold. Replace placeholder code and assets with real implementations.
+- Do NOT commit `.env` files. Use GitHub secrets for CI and Netlify environment variables.
+- Razorpay integration: backend uses `RAZORPAY_KEY_ID` and `RAZORPAY_KEY_SECRET`. Frontend only uses `RAZORPAY_KEY_ID` (public) for checkout.
